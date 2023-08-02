@@ -1,0 +1,28 @@
+<p>&nbsp; interest-calculation works!</p>
+<div class="container" style="margin-left: 300px;">
+<form class="bg-info text-light mt-5 p-5" style="width:60%">
+        <h1>Interest Calculation program</h1>
+        <div class="form-group">
+            <label>Enter principal amount</label>
+            <input [(ngModel)]="calc.amt" name="amt" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Enter Interest rate</label>
+            <input [(ngModel)]="calc.rate" name="rate" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Enter time period</label>
+            <input [(ngModel)]="calc.time"name="time" class="form-control">
+        </div>
+   
+</form>
+<hr>
+<div class="bg-success text-light mt-5 p-3 border border-dark" style="width:30%">
+    <div class="hello">
+    <div>Principal amount is {{calc.amt}}</div>
+    <div>Interest rate is {{calc.rate}}</div>
+    <div>Time is {{calc.time}}</div>
+    <div>Calculated Interest is {{calc.amt*calc.rate*calc.time/100}}</div>
+    </div>
+</div>
+</div>

@@ -1,0 +1,9 @@
+.class1{
+    border: inset rgb(194, 19, 230) 20px;
+    background-color:lightgreen;
+    width:30%;
+    height:200px;
+    margin-left: 390px;
+    margin-top:130px;
+    padding:20px;
+}

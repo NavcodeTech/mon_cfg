@@ -1,0 +1,33 @@
+<p>customer works!</p>
+<div class="container">
+    <button type="button" class="btn btn-danger ml-5 mb-5 mt-5" (click)="customerinfo()">Customer info</button>
+<div class="ml-5 mt-5 text-primary" style="margin-left: 200px;">
+<h1>Customer data</h1>
+<ol>
+    <li>Id is {{customer.id}}</li>
+    <li>name is {{customer.name}}</li>
+    <li> salary is {{customer.salary}}</li>
+    <li> <img [src]="customer.image" [width]="customer.width" [height]="customer.height"/></li>
+</ol>
+</div>
+
+<table class="table table-striped text-dark-emphasis">
+    <thead>
+        <tr>
+            <th class="fw-bold">Customer Id</th>
+            <th class="fw-bold">Customer Name</th>
+            <th class="fw-bold">Customer's salary</th>
+            <th class="fw-bold">Customer's image</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let cust of customer1">
+            <td>{{cust.id}}</td>
+            <td>{{cust.name}}</td>
+            <td>{{cust.salary}}</td>
+            <td><img [src]="cust.image" [width]="cust.width" [height]="cust.height"/></td>
+        </tr>
+    </tbody>
+</table>
+</div>

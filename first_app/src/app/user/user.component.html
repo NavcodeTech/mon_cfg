@@ -1,0 +1,68 @@
+<h1>User page</h1>
+<table class="table table-striped table-dark">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Salary</th>
+            <th>Dob</th>
+            <th>Hobbies</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let u of user">
+            <td>{{u.userid}}</td>
+             <td><span *ngIf="u.usersalary>=20000" class="bg-warning">{{u.username}}</span>
+                <span *ngIf="u.usersalary<20000" class="text-light"></span></td>
+            <td>{{u.usersalary}}</td>
+            <td>{{u.userdob}}</td>
+            <td>{{u.userhobby}}</td>
+
+                 
+        </tr>
+    </tbody>
+</table>
+<hr>
+<h2 [ngStyle]="{'margin-left':'440px','background-color':'green','color':'white','width':'20%'}">Using switch page</h2>
+<table class="table table-striped table-primary">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Salary</th>
+            <th>Dob</th>
+            <th>Hobbies</th>
+            <th>Salary comments</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let u of user">
+            <td>{{u.userid}}</td>
+             <td>{{u.username|uppercase}}</td>
+            <td>{{u.usersalary|currency:'Rs'}}</td>
+            <td>{{u.userdob|date}}</td>
+            <td>{{u.userhobby}}</td>
+            <td>
+                <span [ngSwitch]="u.usersalary">
+                <span *ngSwitchCase="'50000'">
+                    Attractive salary
+                </span>
+                <span *ngSwitchCase="'40000'">
+                   Very Good salary
+                </span>
+                <span *ngSwitchCase="'30000'">
+                    Good salary
+                </span>
+                <span *ngSwitchCase="'20000'">
+                    Base salary
+                </span>
+                <span *ngSwitchCase="'10000'">
+                    Stipend
+                </span>
+                </span>
+            </td>
+            
+                 
+        </tr>
+    </tbody>
+</table>
