@@ -8,6 +8,11 @@ import { CustomerComponent } from './customer/customer.component';
 import { UserComponent } from './user/user.component';
 import { InterestCalculationComponent } from './interest-calculation/interest-calculation.component';
 import { FormsModule } from '@angular/forms';
+import { PipeExampleComponent } from './pipe-example/pipe-example.component';
+import { SqrtPrgPipe } from './pipe-example/pipe/sqrt-prg.pipe';
+import { PowerPrgPipe } from './pipe-example/pipe/power-prg.pipe';
+import { EmployeeComponent } from './employee/employee.component';
+import { BookComponent } from './book/book.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +20,12 @@ import { FormsModule } from '@angular/forms';
     CalculatorComponent,
     CustomerComponent,
     UserComponent,
-    InterestCalculationComponent
+    InterestCalculationComponent,
+    PipeExampleComponent,
+    SqrtPrgPipe,
+    PowerPrgPipe,
+    EmployeeComponent,
+    BookComponent
   ],
   imports: [
     BrowserModule,
