@@ -1,0 +1,195 @@
+<!-- <h2>Success</h2>
+<p>Congratulations, {{ registeredUsername }}! You've successfully registered.</p>
+<p>Email {{ registeredEmail }}</p> -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+ <meta charset="UTF-8">
+
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <title>Banking System Home</title>
+
+ <!-- Include Bootstrap CSS -->
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+<!-- Navigation Bar -->
+
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+
+ <a class="navbar-brand" href="#">Banking System</a>
+
+ <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+
+  <span class="navbar-toggler-icon"></span>
+
+ </button>
+
+ <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+  <ul class="navbar-nav ml-auto">
+
+   <li class="nav-item">
+
+    <a class="nav-link" href="#">Home</a>
+
+   </li>
+
+   <li class="nav-item">
+
+    <a class="nav-link" href="#">Accounts</a>
+
+   </li>
+
+   <li class="nav-item">
+
+    <a class="nav-link" href="#">Transactions</a>
+
+   </li>
+
+   <li class="nav-item">
+
+    <a class="nav-link" href="#">Logout</a>
+
+   </li>
+
+  </ul>
+
+ </div>
+
+</nav>
+
+<!-- Account Balance Display -->
+
+<div class="container mt-5">
+
+ <div class="row justify-content-center">
+
+  <div class="col-md-6">
+
+   <div class="card">
+
+    <div class="card-header text-center">
+    <h3>Welcome {{registeredEmail}}</h3>
+
+     <h4>Account Balance</h4>
+     
+
+    </div>
+
+    <div class="card-body">
+
+     <p>Your current balance is: $1000</p>
+
+    </div>
+
+   
+   </div>
+
+  </div>
+
+ </div>
+
+</div>
+
+<!-- Transaction History -->
+
+<div class="container mt-5">
+
+ <div class="row justify-content-center">
+
+  <div class="col-md-8">
+
+   <div class="card">
+
+    <div class="card-header text-center">
+
+     <h4>Transaction History</h4>
+
+    </div>
+
+    <div class="card-body">
+
+     <table class="table table-striped">
+
+      <thead>
+
+       <tr>
+
+        <th>Date</th>
+
+        <th>Description</th>
+
+        <th>Amount</th>
+
+       </tr>
+
+      </thead>
+
+      <tbody>
+
+       <tr>
+
+        <td>2023-08-01</td>
+
+        <td>Deposit</td>
+
+        <td>$500</td>
+
+       </tr>
+
+       <tr>
+
+        <td>2023-08-02</td>
+
+        <td>Withdrawal</td>
+
+        <td>-$200</td>
+
+       </tr>
+
+      </tbody>
+
+     </table>
+
+    </div>
+
+   </div>
+
+  </div>
+
+ </div>
+
+</div>
+
+<!-- Include Bootstrap JS (optional) -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
