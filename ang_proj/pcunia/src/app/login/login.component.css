@@ -1,0 +1,13 @@
+.body{
+
+    background-image: url(https://images.unsplash.com/photo-1501167786227-4cba60f6d58f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80);
+  
+    background-size:cover ; /* Adjust the image size to cover the entire area */
+  
+    background-repeat: no-repeat; /* Prevent image from repeating */
+  
+    background-attachment: fixed; /* Keep the image fixed while scrolling */
+  
+    height: 680px;
+  
+  }

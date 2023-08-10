@@ -8,11 +8,11 @@ import { User } from '../model/User';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent {
-  username: string = '';
-  password: string = '';
-  email:String='';
-  name:String='';
-  confirmPassword:String=''
+  @Input() username:string='';
+  @Input() password: string = '';
+  @Input() email:String='';
+  @Input() name:String='';
+  @Input() confirmPassword:String=''
   
   @Input() user1:User;
   submitted:boolean;
@@ -24,11 +24,13 @@ export class RegisterComponent {
 
   onSubmit() {
     this.submitted=true;
+    console.log('Username:', this.user1);
     this.router.navigate(['/home'], {
       queryParams: {
-        username: this.username,
-        name:this.name,
-        email:this.email
+        username: this.user1.username,
+        name:this.user1.name,
+        email:this.email,
+        user1:this.user1,
         // You can add other parameters here if needed
       }
     });

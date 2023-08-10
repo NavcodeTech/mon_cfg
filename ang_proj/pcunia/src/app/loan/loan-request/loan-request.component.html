@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+ <meta charset="UTF-8">
+
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <title>Loan Request</title>
+
+ <!-- Include Bootstrap CSS -->
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+<div class="container mt-5">
+
+ <h2 class="text-center mb-4">Loan Request</h2>
+
+ <form>
+
+  <div class="form-row">
+
+   <div class="form-group col-md-6">
+
+    <label for="fullName">Full Name:</label>
+
+    <input type="text" class="form-control" id="fullName" placeholder="Full name">
+
+   </div>
+
+   <div class="form-group col-md-6">
+
+    <label for="contactDetails">Contact Details:</label>
+
+    <input type="tel" class="form-control" id="contactDetails" placeholder="Phone number">
+
+    <input type="email" class="form-control mt-2" id="email" placeholder="Email address">
+
+   </div>
+
+  </div>
+
+  <div class="form-group">
+
+   <label for="residentialAddress">Residential Address:</label>
+
+   <input type="text" class="form-control" id="residentialAddress" placeholder="Residential address">
+
+  </div>
+
+  <div class="form-group">
+
+   <label for="loanType">Loan Type:</label>
+
+   <select class="form-control" id="loanType">
+
+    <option value="personal">Personal Loan</option>
+
+    <option value="home">Home Loan</option>
+
+    <option value="car">Car Loan</option>
+
+    <!-- Add more options as needed -->
+
+   </select>
+
+  </div>
+
+  <div class="form-row">
+
+   <div class="form-group col-md-6">
+
+    <label for="loanAmount">Loan Amount:</label>
+
+    <input type="text" class="form-control" id="loanAmount" placeholder="Loan amount">
+
+   </div>
+
+   <div class="form-group col-md-6">
+
+    <label for="loanPurpose">Loan Purpose:</label>
+
+    <input type="text" class="form-control" id="loanPurpose" placeholder="Loan purpose">
+
+   </div>
+
+  </div>
+
+  <!-- Add more form fields for income details, employment details, credit history, etc. -->
+
+  <div class="form-group">
+
+   <label for="declaration">Declaration and Consent:</label>
+
+   <textarea class="form-control" id="declaration" rows="3" placeholder="I hereby declare that..."></textarea>
+
+  </div>
+
+  <div class="form-group form-check">
+
+   <input type="checkbox" class="form-check-input" id="consent">
+
+   <label class="form-check-label" for="consent">I consent to the bank conducting...</label>
+
+  </div>
+
+  <button type="submit" class="btn btn-primary btn-block">Submit Request</button>
+
+ </form>
+
+</div>
+
+<!-- Include Bootstrap JS (optional) -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+

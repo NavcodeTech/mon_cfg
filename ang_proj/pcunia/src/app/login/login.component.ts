@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
+import { User } from '../model/User';
 
 @Component({
   selector: 'app-login',
@@ -7,17 +8,24 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  username: string = '';
-  password: string = '';
+  @Input() username:string='';
+  @Input() password: string = '';
   
+  @Input() user1:User;
+  submitted:boolean;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) {
+    this.user1=new User();
+    this.submitted=false
+  }
 
-  onSubmit() {
+  onLogin() {
+    this.submitted=true;
+    console.log('Username:', this.user1);
     this.router.navigate(['/home'], {
       queryParams: {
-        username: this.username,
-        // You can add other parameters here if needed
+        username: this.user1.username,
+        
       }
     });
   }
